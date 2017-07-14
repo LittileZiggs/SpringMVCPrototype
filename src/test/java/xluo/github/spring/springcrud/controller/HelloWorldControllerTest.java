@@ -1,11 +1,11 @@
-package xluo.github.spring.springcrud;
+package xluo.github.spring.springcrud.controller;
 
 import org.junit.Test;
 
 /**
  * Created by xiaoluo on 17-7-7.
  */
-public class helloWorldControllerTest {
+public class HelloWorldControllerTest {
 
     @Test
     public void testHelloWorld() {
