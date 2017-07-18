@@ -21,4 +21,14 @@ public class AccountServiceImpl implements AccountService {
     public void addAccount(Account account) {
         accountDao.insert(account);
     }
+
+    @Override
+    public Account getAccountById(long id) {
+        return accountDao.getAccountById(id);
+    }
+
+    @Override
+    public void updateAccount(Account account) {
+        accountDao.updateAccount(account);
+    }
 }

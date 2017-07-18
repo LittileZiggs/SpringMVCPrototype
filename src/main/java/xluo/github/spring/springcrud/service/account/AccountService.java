@@ -7,4 +7,8 @@ import xluo.github.spring.springcrud.model.Account;
  */
 public interface AccountService {
     public void addAccount(Account account);
+
+    public Account getAccountById(long id);
+
+    public void updateAccount(Account account);
 }
