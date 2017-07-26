@@ -16,4 +16,21 @@ public class ServletUtils {
         String value=request.getParameter(parameterName);
         return value==null?null:value.trim();
     }
+
+    /**
+     * 去掉null
+     *
+     * @param des
+     * @return
+     */
+    public static String trimNull(Object des) {
+        try {
+            if (des == null)
+                return "";
+            else
+                return des.toString().trim();
+        } catch (Exception npe) {
+            return "";
+        }
+    }
 }
